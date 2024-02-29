@@ -10,14 +10,22 @@
   </div>
   
   <div class="container-articles">
-    <div class="article">
-      <h2>Title</h2>
-      <span>xx/xx/xxxx</span>
-      <div class="buttons">
-        <button>readmore</button>
-        <button>edit</button>
-        <button>delete</button>
+    <% @all_posts.each do |post| %>  
+      <div class="article">
+        <h2>
+          <%= post.title %>
+        </h2>
+        <span>
+          <%= post.created_at.strftime("%d") %>/<%= post.created_at.strftime("%m") %>/<%= post.created_at.strftime("%Y") %>
+        </span>
+        <div class="buttons">
+          <button>readmore</button>
+          <button>edit</button>
+          <button>delete</button>
+        </div>
       </div>
-    </div>
+    <% end %>
+    
+
   </div>
 </div>
