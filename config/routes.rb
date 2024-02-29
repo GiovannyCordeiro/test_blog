@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root "posts#index"
-  resource :article, only: %i[ new ]
+  resource :posts, only: %i[ new create ]
 end

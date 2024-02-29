@@ -29,7 +29,7 @@
   resize: none;
 }
 
-.box-create-article button {
+.box-create-article input {
   padding: .5rem 3rem;
   background: rgb(10, 226, 255);
   cursor: pointer;
