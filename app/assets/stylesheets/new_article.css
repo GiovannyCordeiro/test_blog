@@ -1,0 +1,39 @@
+.box-create-article {
+  width: 45%;
+  height: 80%;
+  border-radius: 1rem;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 50%;
+}
+
+.input-box input,
+.input-box textarea {
+  border-radius: .5rem;
+  border: none;
+  border: .1px solid black;
+  padding: .5rem 1rem;
+}
+
+.input-box textarea {
+  resize: none;
+}
+
+.box-create-article button {
+  padding: .5rem 3rem;
+  background: rgb(10, 226, 255);
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+  border: 1px solid black;
+}
