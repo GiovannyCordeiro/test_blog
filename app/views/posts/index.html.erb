@@ -6,7 +6,7 @@
     <div class="img-person"></div>
     <p>Giovanny dos Santos Cordeiro</p>
     <p>lorem ipsum dolom</p>
-    <%= link_to "Novo post", new_posts_path %>
+    <%= link_to "Novo post", new_post_path %>
   </div>
   
   <div class="container-articles">
@@ -19,7 +19,7 @@
           <%= post.created_at.strftime("%d") %>/<%= post.created_at.strftime("%m") %>/<%= post.created_at.strftime("%Y") %>
         </span>
         <div class="buttons">
-          <button>readmore</button>
+          <%= link_to "Detalhes post", post_path(post) %>
           <button>edit</button>
           <button>delete</button>
         </div>
