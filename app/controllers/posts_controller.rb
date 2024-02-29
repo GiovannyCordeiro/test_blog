@@ -20,6 +20,10 @@ class PostsController < ApplicationController
     @article = Post.find(params[:id])
   end
 
+  def edit
+    @article = Post.find(params[:id])
+  end
+
   private
   def post_params
     params.require(:post).permit(:title, :content)
