@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag 'specfic_post.css' %>
+
+<div class="container-content">
+  <h2>
+    <%= @article.title %>
+  </h2>
+  <p>
+    <%= @article.created_at.strftime("%d") %>/<%= @article.created_at.strftime("%m") %>/<%= @article.created_at.strftime("%Y") %>
+  </p>
+  <p>
+    <%= @article.content %>
+  </p>
+</div>
