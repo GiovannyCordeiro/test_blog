@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag 'new_post.css' %>
+
+<%= form_with model: article, class: 'box-create-article', data: {turbo: false} do |form| %>
+  <div class="input-box">
+    <%= form.label :title, 'title', class: 'title-post' %>
+    <%= form.text_field :title %>
+  </div>
+  <div class="input-box">
+    <%= form.label :content, 'content', class: 'content-post' %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
